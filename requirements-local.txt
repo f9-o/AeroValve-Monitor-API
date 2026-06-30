@@ -1,0 +1,7 @@
+-r requirements.txt
+uvicorn
+streamlit
+pandas
+plotly
+requests
+playwright

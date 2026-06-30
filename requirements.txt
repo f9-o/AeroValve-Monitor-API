@@ -1,8 +1,2 @@
 fastapi
-uvicorn
-streamlit
-pandas
-plotly
-requests
-playwright
 pydantic
