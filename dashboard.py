@@ -100,7 +100,7 @@ backend_active = False
 data = {}
 
 try:
-    response = requests.get("http://127.0.0.1:8000/api/v1/telemetry", timeout=1.0)
+    response = requests.get("https://aero-valve-monitor-api-dxnh.vercel.app/api/v1/telemetry", timeout=3.0)
     if response.status_code == 200:
         raw_telemetry = response.json()
         data = raw_telemetry.get("valve-aero-01", {})
