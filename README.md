@@ -1,6 +1,6 @@
 # AeroValve Telemetry Engine and HMI SCADA System
 
-[Live API Deployment - Vercel](aero-valve-monitor-api-dxnh.vercel.app) | [Live Dashboard Deployment - Streamlit Cloud]([https://aerovalve-scada.streamlit.app](https://aerovalve-monitor-api.streamlit.app))
+[Live API Deployment - Vercel](aero-valve-monitor-api-dxnh.vercel.app) | [Live Dashboard Deployment - Streamlit Cloud]([https://aerovalve-scada.streamlit.app](https://aerovalve-monitor-api.streamlit.app]))
 
 A high-fidelity industrial telemetry pipeline and SCADA operator interface for pneumatic control valves. This architecture translates raw mechanical events (degradation of seal friction coefficient, stick-slip vibration anomalies, and pilot valve pressure drops) into real-time cloud data streams.
 
