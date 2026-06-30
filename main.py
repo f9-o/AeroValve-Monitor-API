@@ -5,6 +5,7 @@ import threading
 from datetime import datetime, timezone
 from typing import Optional, Dict, Any
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel, Field
 
 app = FastAPI(
@@ -12,6 +13,10 @@ app = FastAPI(
     description="High-frequency mechanical telemetry ingestion and anomaly analysis API for pneumatic systems.",
     version="1.2.0"
 )
+
+@app.get("/", include_in_schema=False)
+def index_redirect():
+    return RedirectResponse(url="/docs")
 
 class TelemetryPayload(BaseModel):
     valve_id: str = Field(..., example="valve-aero-01")
